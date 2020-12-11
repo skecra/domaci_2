@@ -1,0 +1,35 @@
+body{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}
+.pitanje{
+	font-weight: 600;
+}
+.odgovori {
+  margin-bottom: 20px;
+}
+.odgovori label{
+  display: block;
+}
+#kviz{
+	margin: 30px;
+}
+#rezultat{
+	margin: 30px;
+}
+#zavrsi{
+	
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+	margin: 20px;
+}
+#zavrsi:hover{
+	background-color: #38a;
+}
