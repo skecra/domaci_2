@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Movies Watchlist</title>
+</head>
+<body>
+    
+
+
+    <h2 class="text-center mt-2">Movies Watchlist</h2>
+
+    <div class="container">
+        <div class="col-6 col-sm-12 offset-sm-0 offset-3 mt-3 table-responsive">
+            <table  class="table table-hover">
+                <thead>
+                    <th>Naziv</th>
+                    <th>Godina</th>
+                    <th>Drzava</th>
+                    <th>Napomena</th>
+                    <th>Glumci</th>
+                    <th>Odgledan</th>
+                </thead>
+                <tbody id="table">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<div class="container text-center">
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Novi film
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Dodavanje filma</h5>
+          <button type="button" id="iksDugme" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#">
+          <input class="form-control my-1" type="text" id="inputNaziv" placeholder="unesite naziv filma..." required>
+          <div id="alert-naziv" class="alert p-1 d-none" role="alert">
+            Unesite naziv filma
+          </div>
+          <input min="1930" max="2021" class="form-control my-1" type="number" id="inputGodina" placeholder="unesite godinu..." required>
+          <div id="alert-godina" class="alert p-1 d-none" role="alert">
+            Unesite godinu filma
+          </div>
+          <input class="form-control my-1" type="text" id="inputDrzava" placeholder="unesite drzavu..." >
+          
+          <input class="form-control my-1" type="text" id="inputGlumci" placeholder="unesite glumce koje odvajate zarezom..." required>
+          <div id="alert-glumci" class="alert p-1 d-none" role="alert">
+            Unesite glumca, forma: Luka Radulovic Jr. , Marko Markovic, Janko
+          </div>
+          <textarea class="form-control my-1" name="" id="napomena" cols="20" rows="7" placeholder="napomena...."></textarea>
+          <button id="zatvoriModal" type="button" class="btn btn-danger mt-3" data-bs-dismiss="modal" >Zatvori</button>
+          <button id="sacuvajFilmDugme" class="btn mt-3 btn-success">dodaj</button>
+        </form>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
